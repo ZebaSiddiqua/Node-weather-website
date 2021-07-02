@@ -17,7 +17,7 @@ else if (body.error) {
 }
 else{
     
-    callback( undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.feelslike + " degrees out there. There is " + body.current.precip + "% chance of rain." )}
+    callback( undefined, body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degrees out. There is " + body.current.precip + "% chance of rain and the humidity is " + body.current.humidity + "%." )}
 })
 } 
 
