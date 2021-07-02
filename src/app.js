@@ -3,6 +3,7 @@ const express = require('express');
 const hbs= require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast =require('./utils/forecast.js')
+const port = process.env.PORT || 3000
 // calling express() and it has no arguments but various methods can be applied on app 
 const app = express()
 //setting up routes using get method. This tells wat has to be sent back when some recieves the route
@@ -97,6 +98,6 @@ app.get('*',(req,res)=>{
     })
 })
 //to start server method
-app.listen(3000, () =>{
-    console.log('Server is up on port 3000.')
+app.listen(port, () =>{
+    console.log('Server is up on port ' + port)
 })
