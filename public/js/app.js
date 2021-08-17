@@ -1,15 +1,3 @@
-console.log("happy me")
-
-//url from where we are trying to fetch from. then method uses a callback function.
-fetch('http://puzzle.mead.io/puzzle').then((response)=>{
-    //convert to JSON and once done use the data
-     response.json().then((data)=>{
-console.log(data) ;
-     })
-})
-
-
-
 const weatherForm = document.querySelector('form');
 var search ='';
 const p1 = document.getElementById("first")
